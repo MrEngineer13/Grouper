@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/HorizontalRow">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/message_user_image"
+        fresco:roundAsCircle="true"
+        fresco:placeholderImage="@drawable/ic_person_outline_black_24dp"
+        style="@style/MessageAvatar" />
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        style="@style/MessageContainer">
+
+        <TextView
+            android:id="@+id/message_text"
+            style="@style/MessageText" />
+
+        <LinearLayout style="@style/HorizontalWrap">
+
+            <TextView
+                android:id="@+id/message_user"
+                style="@style/MessageUserName" />
+
+            <TextView
+                android:text="@string/bullet"
+                style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/message_time"
+                style="@style/WrapContent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

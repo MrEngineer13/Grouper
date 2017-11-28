@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser" parent="WrapContent">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawablePadding">@dimen/fui_auth_method_button_drawablePadding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_marginTop">@dimen/fui_auth_method_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/fui_auth_method_button_margin</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.FacebookButton">
+        <item name="drawableStartCompat">@drawable/fui_ic_facebook_white_22dp</item>
+        <item name="android:background">@drawable/fui_idp_button_background_facebook</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="LoginContainer" parent="MatchParent">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="HorizontalRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MessageAvatar">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginRight">@dimen/message_margin</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="MessageContainer" parent="VerticalRow">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="VerticalRow">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MessageText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/chat_message_background</item>
+    </style>
+
+    <style name="HorizontalWrap" parent="WrapContent">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MessageUserName" parent="WrapContent">
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <style name="Divider" parent="WrapContent">
+        <item name="android:layout_marginLeft">@dimen/message_margin</item>
+        <item name="android:layout_marginRight">@dimen/message_margin</item>
+    </style>
+
+</resources>

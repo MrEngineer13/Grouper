@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LoginContainer">
+
+    <com.firebase.ui.auth.ui.idp.SupportVectorDrawablesButton
+        android:id="@+id/facebook_button"
+        android:text="@string/fui_sign_in_with_facebook"
+        style="@style/FirebaseUI.Button.AccountChooser.FacebookButton"/>
+
+</RelativeLayout>
